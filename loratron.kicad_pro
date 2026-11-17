@@ -576,10 +576,7 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {
-      "GND": "rgb(65, 255, 38)",
-      "unconnected-(J1-Pin_52-Pad52)": "rgb(255, 0, 70)"
-    },
+    "net_colors": {},
     "netclass_assignments": {},
     "netclass_patterns": []
   },
@@ -1336,7 +1333,7 @@
         "uuid": "53a77f7c-61ec-4227-bc8b-595d03316b48"
       }
     ],
-    "used_designators": "#PWR1-39,C1-21,D1-2,IC1-2,J1-3,L1-5,R1-4,SW1-2,U1-3,Y1",
+    "used_designators": "#PWR1-42,C1-23,D1-2,H1-5,IC1-2,J1-4,L1-5,R1-4,SW1-2,U1-3,Y1",
     "variants": []
   },
   "sheets": [
