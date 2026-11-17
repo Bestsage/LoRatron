@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "project": "loratron.kicad_pro",
+  "current": "2026-11-17_1822",
+  "runs": {
+    "2026-11-17_1711": {
+      "source_hashes": {
+        "loratron.kicad_sch": "sha256:2098d3b88f62397dfea34bc5b58df70834516c5c246f0f7a86b1738b2129c5a2",
+        "schematic.json": "sha256:162ce4885f4d3c83cef1e45840de89c0f2878c019fd812e5f29750912e82b587"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py loratron.kicad_sch"
+      },
+      "generated": "2026-11-17T17:12:56+01:00",
+      "pinned": false
+    },
+    "2026-11-17_1733": {
+      "source_hashes": {
+        "loratron.kicad_sch": "sha256:4abc6122bc352d7ae6681f6f172d61ab100ea511a6ab507aedcb0d49124cee09"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py loratron.kicad_sch"
+      },
+      "generated": "2026-11-17T17:33:52+01:00",
+      "pinned": false
+    },
+    "2026-11-17_1805": {
+      "source_hashes": {
+        "loratron.kicad_sch": "sha256:1bc607b23f026756b35591d3e764189a5d1b2cd9d964c2429a08609d1c93b035"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py loratron.kicad_sch"
+      },
+      "generated": "2026-11-17T18:05:46+01:00",
+      "pinned": false
+    },
+    "2026-11-17_1822": {
+      "source_hashes": {
+        "loratron.kicad_sch": "sha256:8f739ac24e73017819075765f3b5a82c9b046bf86375114f3d94d216811fd695"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "spice": "spice.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py loratron.kicad_sch"
+      },
+      "generated": "2026-11-17T18:22:26+01:00",
+      "pinned": false
+    }
+  }
+}
