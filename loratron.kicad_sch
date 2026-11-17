@@ -6701,7 +6701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad"
 			(at 229.87 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -6782,7 +6782,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad"
 			(at 245.11 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -8466,7 +8466,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2_MiddlePushTravel_H2.5mm"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
 			(at 218.44 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8943,7 +8943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2_MiddlePushTravel_H2.5mm"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
 			(at 138.43 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -12258,7 +12258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad"
 			(at 234.95 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14465,7 +14465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad"
 			(at 240.03 132.08 0)
 			(hide yes)
 			(show_name no)
