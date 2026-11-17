@@ -81,20 +81,7 @@
           "width": 0.2
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|131233363|49815029|3b557ff2-6056-45e3-9f20-46ab9d5518f8|a3c2a819-ca70-4dee-8716-de62a0dabefe",
-          ""
-        ],
-        [
-          "courtyards_overlap|187354914|54489966|608516f4-a84e-45e8-8dff-d6e2087af718|a3c2a819-ca70-4dee-8716-de62a0dabefe",
-          ""
-        ],
-        [
-          "courtyards_overlap|198273363|52189746|13c04c3e-3974-44c0-8066-a1c7fdbdb308|a3c2a819-ca70-4dee-8716-de62a0dabefe",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -537,6 +524,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -1348,33 +1336,13 @@
         "uuid": "53a77f7c-61ec-4227-bc8b-595d03316b48"
       }
     ],
-    "used_designators": "",
+    "used_designators": "IC1,U1",
     "variants": []
   },
   "sheets": [
     [
       "53a77f7c-61ec-4227-bc8b-595d03316b48",
-      "2026_WS_C_AV_TEMPLATE"
-    ],
-    [
-      "366f6492-dde3-46cd-82a7-d2026dafb12e",
-      "Block Diagram"
-    ],
-    [
-      "295dbe6a-fd29-4ee8-93ce-3881271e8549",
-      "Project Architecture"
-    ],
-    [
-      "6a206edd-2d1c-40ff-8ed6-f58fa8f5ca45",
-      "main_pc104_connections"
-    ],
-    [
-      "cb9debe2-fe5b-43b5-969e-b19eb3d985f9",
-      "Power - Sequencing"
-    ],
-    [
-      "2021ea5f-d54f-4e1b-a301-7bfd184df591",
-      "Revision History"
+      "loratron"
     ]
   ],
   "text_variables": {},
