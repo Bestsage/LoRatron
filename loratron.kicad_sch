@@ -1294,6 +1294,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -3750,6 +3951,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VBUS"
 			(power global)
 			(pin_numbers
@@ -3945,6 +4261,12 @@
 		(uuid "2f22a10f-b134-4601-9a34-c8cd0fc12b68")
 	)
 	(junction
+		(at 46.99 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30919673-6b61-49c1-b597-26a6236a0148")
+	)
+	(junction
 		(at 271.78 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3981,6 +4303,18 @@
 		(uuid "99a8c3da-ce93-4c7d-9a98-afa8c6600f23")
 	)
 	(junction
+		(at 57.15 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cd3fcda-2184-43e5-9d4c-ad003891bc3f")
+	)
+	(junction
+		(at 237.49 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0b8a859-073e-4aef-87fc-ef288e2511a0")
+	)
+	(junction
 		(at 201.93 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4003,6 +4337,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "de9b1016-d581-4f72-9ae2-88bab0f55a41")
+	)
+	(junction
+		(at 236.22 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e25d6e20-93bb-450c-8dbb-54d48952dec7")
 	)
 	(junction
 		(at 63.5 158.75)
@@ -4047,24 +4387,80 @@
 		(uuid "ff8f2a88-b776-4e98-9fd5-03ced7487c31")
 	)
 	(no_connect
+		(at 201.93 59.69)
+		(uuid "1b2e62f7-6a37-416f-87dd-61a4259f1ae3")
+	)
+	(no_connect
+		(at 168.91 59.69)
+		(uuid "24b3c798-c77b-4d77-a528-f2891b048dc2")
+	)
+	(no_connect
 		(at 201.93 41.91)
 		(uuid "28f31469-dff8-4a35-9bb4-6accb7aecbf0")
+	)
+	(no_connect
+		(at 168.91 77.47)
+		(uuid "39936263-a40b-44d7-8066-8e10754751f5")
+	)
+	(no_connect
+		(at 168.91 62.23)
+		(uuid "3de146db-fa46-4517-85bb-a9f5d9940b0e")
 	)
 	(no_connect
 		(at 201.93 36.83)
 		(uuid "3f66690f-6638-4c2c-9e6f-28f5e9acea55")
 	)
 	(no_connect
+		(at 168.91 46.99)
+		(uuid "40c37291-94dd-4244-aea8-9933ca407d81")
+	)
+	(no_connect
+		(at 168.91 49.53)
+		(uuid "4c95faa3-efb2-40ee-ba24-db383152f1d7")
+	)
+	(no_connect
+		(at 168.91 52.07)
+		(uuid "5cc33bae-9818-4584-9f6e-a1025ba358a2")
+	)
+	(no_connect
 		(at 45.72 179.07)
 		(uuid "5fa06519-e244-492b-8154-5a4d0d924899")
+	)
+	(no_connect
+		(at 168.91 44.45)
+		(uuid "6389e656-9f7c-4cb8-a4e1-3c6007a92d7e")
 	)
 	(no_connect
 		(at 201.93 44.45)
 		(uuid "686c9335-a448-47eb-85fe-a9ab07c3ef79")
 	)
 	(no_connect
+		(at 201.93 52.07)
+		(uuid "7b40219a-0eab-461b-b3fd-a5e3b8494f08")
+	)
+	(no_connect
+		(at 201.93 49.53)
+		(uuid "8a8dd9fb-611a-4940-83bb-45875ac64951")
+	)
+	(no_connect
+		(at 201.93 69.85)
+		(uuid "8d5e58c6-30ed-4a47-b6a0-3d39934423ff")
+	)
+	(no_connect
+		(at 168.91 64.77)
+		(uuid "96a9373f-9873-40a8-9ef2-183b8069e9ba")
+	)
+	(no_connect
+		(at 168.91 97.79)
+		(uuid "a419a747-60b9-477b-bb7d-b361bab8dc78")
+	)
+	(no_connect
 		(at 201.93 46.99)
 		(uuid "ae4830f5-98fb-44b1-ab95-d5586b674ca9")
+	)
+	(no_connect
+		(at 201.93 54.61)
+		(uuid "b25614c2-2947-4242-927a-c65311027352")
 	)
 	(no_connect
 		(at 168.91 72.39)
@@ -4077,6 +4473,18 @@
 	(no_connect
 		(at 168.91 74.93)
 		(uuid "c125ca58-9306-4364-a252-fdca74e5fadd")
+	)
+	(no_connect
+		(at 201.93 57.15)
+		(uuid "c3f6ce70-b901-4d6c-84ee-1e0ef34a4359")
+	)
+	(no_connect
+		(at 168.91 54.61)
+		(uuid "e2fed620-7616-425d-8ffd-88a337a2d713")
+	)
+	(no_connect
+		(at 168.91 57.15)
+		(uuid "f150b6bf-8979-4959-8380-1fba1fcb853f")
 	)
 	(wire
 		(pts
@@ -4167,6 +4575,16 @@
 			(type default)
 		)
 		(uuid "1782616e-76ca-487d-be32-0b916845c952")
+	)
+	(wire
+		(pts
+			(xy 215.9 74.93) (xy 215.9 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1815717e-eea9-4236-a1f8-b1c0891c3d51")
 	)
 	(wire
 		(pts
@@ -4330,7 +4748,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 123.19) (xy 60.96 123.19)
+			(xy 52.07 123.19) (xy 57.15 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4400,6 +4818,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 71.12) (xy 237.49 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d6ace22-0e8a-4f72-8178-d98825e5a6c6")
+	)
+	(wire
+		(pts
 			(xy 226.06 39.37) (xy 226.06 41.91)
 		)
 		(stroke
@@ -4430,7 +4858,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 151.13) (xy 49.53 151.13)
+			(xy 45.72 151.13) (xy 46.99 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4467,6 +4895,16 @@
 			(type default)
 		)
 		(uuid "73d8eef5-4d8b-4f66-a5c0-af9a1d64bcaf")
+	)
+	(wire
+		(pts
+			(xy 46.99 151.13) (xy 52.07 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "782bff49-0102-4d14-92ed-91c8ecd4f4d1")
 	)
 	(wire
 		(pts
@@ -4527,6 +4965,16 @@
 			(type default)
 		)
 		(uuid "848d93c0-582e-4170-87db-beadb3783d11")
+	)
+	(wire
+		(pts
+			(xy 213.36 67.31) (xy 215.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89f7eb11-cf80-4f63-bb38-204a834b06d5")
 	)
 	(wire
 		(pts
@@ -4600,6 +5048,26 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 67.31) (xy 205.74 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bed7354-ca87-44d3-a311-1ad8bb655d49")
+	)
+	(wire
+		(pts
+			(xy 231.14 55.88) (xy 231.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a500d494-51f4-4733-a58f-f9836ef172ac")
+	)
+	(wire
+		(pts
 			(xy 35.56 115.57) (xy 35.56 123.19)
 		)
 		(stroke
@@ -4610,7 +5078,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 151.13) (xy 49.53 149.86)
+			(xy 52.07 151.13) (xy 52.07 149.86)
 		)
 		(stroke
 			(width 0)
@@ -4670,6 +5138,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 58.42) (xy 236.22 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf719d0-dc3a-4899-866d-6367ac490dd0")
+	)
+	(wire
+		(pts
 			(xy 229.87 134.62) (xy 234.95 134.62)
 		)
 		(stroke
@@ -4677,6 +5155,16 @@
 			(type default)
 		)
 		(uuid "e0236436-6748-4953-81c1-0a08adb008e3")
+	)
+	(wire
+		(pts
+			(xy 57.15 123.19) (xy 60.96 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e13f389b-af5e-44c6-a827-878fd8f4cbd5")
 	)
 	(wire
 		(pts
@@ -5467,7 +5955,7 @@
 			(uuid "92639846-0c27-4fd2-bb4b-654b5a9c2d88")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "R3")
 					(unit 1)
@@ -5545,9 +6033,87 @@
 			(uuid "55c90d20-bdf6-41d9-9568-d01630d5a079")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18671373-c28d-4f0a-9f67-3aea0590f482")
+		(property "Reference" "#PWR043"
+			(at 215.9 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "078affd2-88a8-4608-b102-1e2761a1d25c")
+		)
+		(instances
+			(project "loratron"
+				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5623,7 +6189,7 @@
 			(uuid "8315ba75-604d-4951-83d3-d8659da94ebd")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR010")
 					(unit 1)
@@ -6022,7 +6588,7 @@
 			(uuid "49ee5dc0-9252-4b72-b63f-f55ab149e764")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "R1")
 					(unit 1)
@@ -6100,7 +6666,7 @@
 			(uuid "6223d88b-6403-4d9f-8080-12b3220371da")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR014")
 					(unit 1)
@@ -6178,7 +6744,7 @@
 			(uuid "a6ca5c6b-d675-43a0-9f58-49df9f37b439")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR01")
 					(unit 1)
@@ -6579,7 +7145,7 @@
 			(uuid "04fabd44-f0dc-4513-8321-67a578606f1f")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "C7")
 					(unit 1)
@@ -6657,7 +7223,7 @@
 			(uuid "702784fd-b4ab-4a73-a5fa-ae14bc47f65e")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR024")
 					(unit 1)
@@ -6738,7 +7304,7 @@
 			(uuid "f75aae80-8f71-4d4d-a13c-8822b120909c")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "H1")
 					(unit 1)
@@ -6819,7 +7385,7 @@
 			(uuid "f8831e11-51c0-4d2d-847c-89a784b4a4c8")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "H4")
 					(unit 1)
@@ -6897,7 +7463,7 @@
 			(uuid "55ff144a-254d-4bfc-85d4-796d34aa4ae6")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR019")
 					(unit 1)
@@ -6975,7 +7541,7 @@
 			(uuid "68b36e40-e7cf-4a0e-bd0e-c9cbd526d691")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR07")
 					(unit 1)
@@ -7376,7 +7942,7 @@
 			(uuid "eee4a7df-589b-4a3a-9e3b-97c7afd10859")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "D1")
 					(unit 1)
@@ -7454,7 +8020,7 @@
 			(uuid "36b16e00-679c-4da8-83a9-f6a9639f5308")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR02")
 					(unit 1)
@@ -7870,7 +8436,7 @@
 			(uuid "be87dcc6-8a0d-4e3d-a38f-8d664154ebaa")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "U2")
 					(unit 1)
@@ -7880,7 +8446,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 49.53 149.86 0)
+		(at 52.07 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7891,7 +8457,7 @@
 		(fields_autoplaced yes)
 		(uuid "6710d30b-bf19-47ff-92f2-e3fc995d8fd6")
 		(property "Reference" "#PWR012"
-			(at 49.53 153.67 0)
+			(at 52.07 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7902,7 +8468,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 49.53 144.78 0)
+			(at 52.07 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7912,7 +8478,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 149.86 0)
+			(at 52.07 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7923,7 +8489,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 149.86 0)
+			(at 52.07 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7934,7 +8500,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 49.53 149.86 0)
+			(at 52.07 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7948,7 +8514,7 @@
 			(uuid "2233ecca-6e2e-4d47-a31b-21ec32b06000")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR012")
 					(unit 1)
@@ -8348,7 +8914,7 @@
 			(uuid "086f5b3b-1e48-4720-8ad6-db6abe96e44c")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "C4")
 					(unit 1)
@@ -8426,7 +8992,7 @@
 			(uuid "65deeccb-8884-4322-98cf-b6e41c464077")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR022")
 					(unit 1)
@@ -8825,7 +9391,7 @@
 			(uuid "36dcf1f0-c018-4378-b5be-0682f923bc7c")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "SW2")
 					(unit 1)
@@ -8903,9 +9469,86 @@
 			(uuid "d323d207-cfce-404e-a4e8-be340bd88f38")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 231.14 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "73385f9d-ca24-4a96-a3ad-3c2ec0d1339a")
+		(property "Reference" "#FLG01"
+			(at 231.14 53.975 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 230.886 52.324 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 231.14 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44cb4ea7-7350-4364-8145-4580b112239c")
+		)
+		(instances
+			(project "loratron"
+				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -9302,7 +9945,7 @@
 			(uuid "05beaa38-172b-4ea2-99eb-265736e66e4b")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "SW1")
 					(unit 1)
@@ -9380,7 +10023,7 @@
 			(uuid "3158ce0c-14ce-4797-967f-1b23592bda3c")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR025")
 					(unit 1)
@@ -9398,10 +10041,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "805a9fef-204b-4334-b26a-9e5ed742671b")
 		(property "Reference" "U1"
-			(at 68.58 116.84 0)
+			(at 68.58 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9411,7 +10053,7 @@
 			)
 		)
 		(property "Value" "TLV1117LV33DCYR"
-			(at 68.58 119.38 0)
+			(at 71.628 119.888 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9782,7 +10424,7 @@
 			(uuid "fecf9b20-68ba-4131-b26c-1aabebb60bf8")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "U1")
 					(unit 1)
@@ -9860,7 +10502,7 @@
 			(uuid "57a7533b-4bfb-4be5-b195-98d533bac18e")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR016")
 					(unit 1)
@@ -10261,9 +10903,86 @@
 			(uuid "dc5c0676-3a8d-40e9-a178-b4f1b6d4f3bc")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 46.99 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84627897-a167-4b75-bcdb-5204ce01db0b")
+		(property "Reference" "#FLG02"
+			(at 46.99 149.225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 46.736 147.574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 46.99 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a633657-f810-47b4-b837-66914afa3f91")
+		)
+		(instances
+			(project "loratron"
+				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -10339,9 +11058,86 @@
 			(uuid "e7064ed9-bfda-41b4-a76e-322268c01b80")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 57.15 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "894549f4-164d-416a-abfc-63fd5b97f158")
+		(property "Reference" "#FLG03"
+			(at 57.15 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 56.896 119.634 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 57.15 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "80efcd2c-3604-443e-b726-58d875aafbc0")
+		)
+		(instances
+			(project "loratron"
+				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -10417,7 +11213,7 @@
 			(uuid "e23faa03-92ec-42c4-ae46-18eefab57e83")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR08")
 					(unit 1)
@@ -10818,7 +11614,7 @@
 			(uuid "10ff9562-962b-4e45-a4e5-49f8e03af20d")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "R2")
 					(unit 1)
@@ -11262,7 +12058,7 @@
 			(uuid "b1df2f08-668b-460b-a937-8bc9e772f335")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "J1")
 					(unit 1)
@@ -11340,7 +12136,7 @@
 			(uuid "b9363cb4-7a35-4691-8fd4-29b098febce5")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR04")
 					(unit 1)
@@ -11418,7 +12214,7 @@
 			(uuid "60ed1c86-4991-4cd1-9977-6384e12183ff")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR015")
 					(unit 1)
@@ -11447,7 +12243,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF"
 			(at 157.226 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11816,7 +12612,7 @@
 			(uuid "b9571c81-3c5d-41c8-bc3a-dcbf8c7d7abc")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "C3")
 					(unit 1)
@@ -12214,7 +13010,7 @@
 			(uuid "43b6edb1-4261-4aab-9ae3-84fac02b7956")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "R4")
 					(unit 1)
@@ -12295,7 +13091,7 @@
 			(uuid "7d922d33-029b-49cb-a218-e0a111f4eddf")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "H2")
 					(unit 1)
@@ -12373,7 +13169,7 @@
 			(uuid "48bc1e22-4f86-41ac-8ab9-105d84b41858")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR09")
 					(unit 1)
@@ -12774,7 +13570,7 @@
 			(uuid "766ef568-131f-40a9-a011-67241ee39700")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "C2")
 					(unit 1)
@@ -12852,7 +13648,7 @@
 			(uuid "87e062fa-10c2-4585-98c0-2645d02916f4")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR05")
 					(unit 1)
@@ -13262,7 +14058,7 @@
 			(uuid "282ca0cf-7484-48c8-b49b-60cc5939a11a")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "J2")
 					(unit 1)
@@ -13340,7 +14136,7 @@
 			(uuid "18ddb4dd-f211-4bd6-9d6d-a31ca43cbe24")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR011")
 					(unit 1)
@@ -13418,7 +14214,7 @@
 			(uuid "9de90691-b1a4-44b8-803d-9f6e6bfcfb7f")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR03")
 					(unit 1)
@@ -14020,7 +14816,7 @@
 			(uuid "57fbda1c-c276-4f59-a4ec-c1af361f07ae")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "IC2")
 					(unit 1)
@@ -14421,7 +15217,7 @@
 			(uuid "37c02e64-8b7f-44da-9897-c3d09d67b528")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "C5")
 					(unit 1)
@@ -14502,7 +15298,7 @@
 			(uuid "2295b2c1-0955-4959-ac67-6edfb396f995")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "H3")
 					(unit 1)
@@ -14580,7 +15376,7 @@
 			(uuid "116746e4-9977-40f3-b734-3698ddd2c408")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR017")
 					(unit 1)
@@ -14658,7 +15454,7 @@
 			(uuid "60beebf6-9514-4e9e-94ad-315b8090b554")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR026")
 					(unit 1)
@@ -14736,9 +15532,86 @@
 			(uuid "07d6b2f3-c1cf-441b-8a82-119fa8206ead")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 232.41 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3b974bc-3a20-4a05-bf9b-e1d1d4d927a4")
+		(property "Reference" "#FLG04"
+			(at 232.41 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 232.156 67.564 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 232.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e73b46b4-eac6-4bf0-a016-046402aff99a")
+		)
+		(instances
+			(project "loratron"
+				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -14814,9 +15687,88 @@
 			(uuid "4c2d60fb-6eb3-4303-88d5-bb3c5e61a57a")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 209.55 67.31 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f9546e60-4644-4a9f-9e65-7525909a2eab")
+		(property "Reference" "R6"
+			(at 209.55 69.596 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 209.55 72.136 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 209.55 69.088 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 209.55 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a3405654-fde7-4aed-9998-42ad8bac696d")
+		)
+		(pin "1"
+			(uuid "824d4c8f-49df-4ba1-8231-fc2c258a3dc6")
+		)
+		(instances
+			(project "loratron"
+				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -15214,7 +16166,7 @@
 			(uuid "37ef2bd6-8f2e-4819-9c26-fd429ea26bcd")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "C1")
 					(unit 1)
@@ -15614,9 +16566,102 @@
 			(uuid "eed62801-9fb0-4d4f-81d9-ac9df63d41a2")
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 215.9 71.12 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff20a0da-e857-49c5-af28-2d842069df65")
+		(property "Reference" "D3"
+			(at 219.71 71.4374 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 219.71 73.9774 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0b5c101-bc14-4f6a-b5e0-78b10b614880")
+		)
+		(pin "2"
+			(uuid "331ac54d-5e75-447e-85c0-e3a928aa1b62")
+		)
+		(instances
+			(project "loratron"
+				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -15661,7 +16706,7 @@
 			)
 		)
 		(instances
-			(project "RaresV1"
+			(project "loratron"
 				(path "/53a77f7c-61ec-4227-bc8b-595d03316b48"
 					(page "2")
 				)
