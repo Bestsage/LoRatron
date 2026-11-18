@@ -2443,6 +2443,26 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 39.37) (xy 123.19 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c97e5d6-d815-4f32-949d-c1a2d1641ab0")
+	)
+	(wire
+		(pts
+			(xy 128.27 35.56) (xy 128.27 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fed2e2b-a363-4118-94e3-b7c9338d40f8")
+	)
+	(wire
+		(pts
 			(xy 181.61 96.52) (xy 173.99 96.52)
 		)
 		(stroke
@@ -2463,13 +2483,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 40.64) (xy 146.05 40.64)
+			(xy 128.27 40.64) (xy 123.19 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2fd466a2-c30f-46d3-a4f4-e2c6fd62bbc1")
+		(uuid "23e8d3f7-e888-4fad-a20f-0f9558e118e6")
 	)
 	(wire
 		(pts
@@ -2543,6 +2563,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 40.64) (xy 130.81 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53fc04c5-2537-4d34-81dc-91ed58f2cbff")
+	)
+	(wire
+		(pts
 			(xy 134.62 72.39) (xy 134.62 73.66)
 		)
 		(stroke
@@ -2593,6 +2623,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 39.37) (xy 123.19 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69d7cadd-738b-4774-9660-7117dedf3818")
+	)
+	(wire
+		(pts
 			(xy 147.32 27.94) (xy 147.32 31.75)
 		)
 		(stroke
@@ -2630,16 +2670,6 @@
 			(type default)
 		)
 		(uuid "7fd065c3-aadb-462e-a9ab-02bf4c30c717")
-	)
-	(wire
-		(pts
-			(xy 123.19 35.56) (xy 128.27 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89441ac8-ba8c-44ad-83a6-45d247c9d120")
 	)
 	(wire
 		(pts
@@ -2783,6 +2813,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 40.64) (xy 130.81 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0444a4b-16dc-42c4-b2cb-005cf253edbe")
+	)
+	(wire
+		(pts
 			(xy 133.35 109.22) (xy 128.27 109.22)
 		)
 		(stroke
@@ -2921,16 +2961,6 @@
 		)
 		(uuid "fd4afb78-ede1-40e5-99d7-67ab17d83242")
 	)
-	(label "V1"
-		(at 102.87 43.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0b575ea3-15a3-4d13-ab61-005be14501a8")
-	)
 	(label "VTCXO"
 		(at 73.66 96.52 180)
 		(effects
@@ -2950,6 +2980,16 @@
 			(justify left bottom)
 		)
 		(uuid "13137a2b-a613-4f0f-88b5-d7bc0f70eb0c")
+	)
+	(label "V1"
+		(at 102.87 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "18f2dcbf-5288-411f-b161-4d0d4c773d6f")
 	)
 	(label "V2"
 		(at 173.99 109.22 0)
@@ -2991,6 +3031,16 @@
 		)
 		(uuid "a23ebdb2-b1d0-4ecf-9312-a5433dcb4a97")
 	)
+	(label "V2"
+		(at 102.87 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b26b6d82-89f8-432f-a9f5-b40faa109960")
+	)
 	(label "OSC_OUT"
 		(at 39.37 29.21 0)
 		(effects
@@ -3000,16 +3050,6 @@
 			(justify left bottom)
 		)
 		(uuid "b46d23e1-2dec-4dfb-9de1-ef25c2c25aa5")
-	)
-	(label "V2"
-		(at 102.87 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "da0556d5-9242-44d9-a0e6-46b8c457c005")
 	)
 	(label "V1"
 		(at 173.99 106.68 0)
