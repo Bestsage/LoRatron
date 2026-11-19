@@ -16,48 +16,68 @@ Checked: the `loratron.kicad_sch` / `rf.kicad_sch` saved at 15:16, the netlist a
 
 Y1 (ECS-TXO-32CSMV) pin 1 tied to GND is **correct**: datasheet pins are 1 GND, 2 GND, 3 Out, 4 VDD. VDD is 1.7–3.465 V.
 
-## 2. RF chain vs reference
+## 2. RF chain vs **Semtech reference designs** (updated 2026-11-19)
 
-Reference: the Waveshare Core1121-XF schematic, a production LR1121 module with the same PE4259 SPDT, HP-PA-only topology and an 850–930 MHz sub-GHz band. It matches Semtech's block diagram (DS §4.7, Fig. 4-1) and follows the Semtech UM rule (§9.2) quoted under item A.
-Assumes the sub-GHz band is **868 MHz**.
+Sources: Semtech production packages from semtech.com, in `~/Downloads`:
+- **LR1121MB1DIS e655v01a** (868/915 MHz DVK, **0402** passives): schematic + BOM.
+- **LR1121MB2THDAS e742v01a** (868/915 MHz, **HP-only Tx, SPDT switch, TCXO**, 0201 passives, BOM rev 19.11.2024): schematic + BOM.
 
-### A. HP PA TX path (pin 32 RFO_HP_LF → U3 RF1)
+The HP Tx network and the antenna low-pass filter are **identical on both boards**. Values below are from the 0402 board (e655) unless stated.
+These **replace the Waveshare values** in the first version of this review. Waveshare's sub-GHz Tx/Rx values differ from Semtech's and were dropped.
 
-| | Current | Reference |
+### A. HP PA Tx (pin 32 RFO_HP_LF → U3 RF1)
+| Position | Current | Semtech |
 |---|---|---|
-| Choke VR_PA → pin 32 | L3 47 nH | **68 nH high-Q**, with **200 Ω in parallel**. Semtech UM §9.2: "best practice to place a 200 Ohm resistor in parallel to the HP PA choke inductor" |
-| VR_PA decoupling | C11 100 nF + C12 100 pF | **2.2 nF + 68 pF** |
-| Match / harmonic filter | L4 22 nH series → C17 4.3 pF shunt → C18 47 pF DC block | pin 32 → **6.8 nH ∥ 4.3 pF** (series trap) → **15 pF** shunt → **22 nH** series → shunt (DNP pad) → **12 pF** series → **6.8 pF** shunt → RF1 |
+| Choke VR_PA → pin 32 | L3 47 nH | **47 nH** LQW15AN47NJ00D ✓ |
+| Across the choke | — | **200 Ω** (R33) |
+| VR_PA decoupling | C11 100 nF, C12 100 pF | **2.2 nF + 47 pF** |
+| Series trap at pin 32 | — | **3.3 nH (LQW15AN3N3C) ∥ 1.2 pF** |
+| Shunt | — | **6.8 pF** |
+| Series | L4 22 nH | **8.2 nH** (LQW15AN8N2J) |
+| Shunt | C17 4.3 pF | **NC pad** (C11 on e655) |
+| Series DC block | C18 47 pF | **47 pF** ✓ |
+| Shunt (switch side) | — | **1.8 pF** |
 
-The current network has 2 elements where the reference has 7. Expect a wrong load at the PA and weak suppression of the 2nd and 3rd harmonics at +22 dBm.
+### B. Rx (pin 30 RFI_P_LF0 / pin 29 RFI_N_LF0 → U3 RF2): lumped balun
+| Position | Current | Semtech |
+|---|---|---|
+| P ↔ N | L5 56 nH | **22 nH** (LQW15AN22NH) |
+| N → GND | C19 47 pF | **1.2 pF** (MB2 0201: 1.0 pF) |
+| N → node A | — | **47 nH** (LQW15AN47NJ) |
+| P → node A (series) | C20 1.2 pF to GND | **1.5 pF, series P→A** |
+| A → GND | — | **NC pad** |
+| A → switch RF2 | C21 47 pF from P | **47 pF from A** |
 
-### B. RX path (pins 30 RFI_P_LF0 / 29 RFI_N_LF0 → U3 RF2). The input is differential.
+### C. 2.4 GHz (pin 26 RFIO_HF → J3)
+| Position | Current | e655 (0402) | e742 (0201, 2024, tuned for 2.4 G Tx) |
+|---|---|---|---|
+| Shunt at pin | C14 1.3 pF ✓ | 1.3 pF | 0.8 pF |
+| Series | L2 3.6 nH ✓ | 3.6 nH | 4.3 nH |
+| Shunt | C15 1 pF | **1.6 pF** | 1.6 pF |
+| Series (∥ NC pad) | — | **3.6 nH** | 3.6 nH |
+| Shunt | — | **0.7 pF** | 1.8 pF |
+| Series DC block | C16 47 pF | **33 pF** | 33 pF |
+Use the e655 column, since it's tuned with 0402 parts like yours. Leave pad room to try the e742 values.
 
-| Current | Reference (lumped balun) |
-|---|---|
-| L5 56 nH P–N; C19 47 pF N→GND (AC-grounds N); C20 1.2 pF P→GND; C21 47 pF P→RF2 | **56 nH** P–N; **5.1 pF** N→GND; **47 nH** N→A; **1.2 pF** P→A; **1 pF** A→GND; **47 pF** A→RF2 |
+### D. Antenna low-pass after the switch (U3 RFC → J4), identical on both boards
+RFC → **3.3 pF** shunt → **9.1 nH** series (LQW15AN9N1J) → **3.3 pF** shunt → **47 pF** series (C22) → J4.
 
-The current circuit AC-grounds the N input, so it isn't a proper balun. Expect lost sensitivity.
+### E. Switch control (PE4259 kept; Semtech e742 uses the BGS12WN6 SPDT)
+**100 Ω series + 1 nF to GND** on each control line (V1, V2).
 
-### C. 2.4 GHz path (pin 26 RFIO_HF → J3). DS Fig. 4-1 calls this a "Harmonics Filter".
+### F. Power and clock
+| Item | Current | Semtech |
+|---|---|---|
+| DC-DC L1 | 2.2 µH 0805 | **10 µH TDK MLZ1608N100LT000 (0603)**; 15 µH MLZ1608N150L is the listed 2nd option. Replaces my earlier "15 µH" note. |
+| VREG | C10 470 nF | 470 nF ✓ |
+| VBAT_RF (pin 2) | C8 100 nF | **100 nF + 47 pF** |
+| VBAT (pin 15) | C9 100 nF | 100 nF ✓ |
+| Bulk | 22 µF at the LDO | 10 µF + 4×1 µF on VDD_RADIO → add **10 µF** near the LR1121 |
+| VTCXO | C23 100 nF | **470 pF at pin 3 → ferrite BLM15AG100SN1D (0402 equivalent of BLM03AG100SN1D) → 100 nF at the TCXO** |
+| TCXO → XTA | 10 pF + 220 Ω | **10 pF + 220 Ω** ✓ |
 
-| Current | Reference |
-|---|---|
-| 1.3 pF shunt → 3.6 nH → 1 pF shunt → 47 pF → J3 | **1.3 pF** shunt → **3.6 nH** → **1.6 pF** shunt → **3.6 nH** (∥ DNP pad) → **0.7 pF** shunt → **33 pF** → J3 |
-
-### D. Antenna side of the switch (U3 RFC → J4)
-Reference: a π low-pass of **4.3 pF – 15 nH – 4.3 pF** at the antenna port. Current design: only C22 47 pF. Keep C22 as the DC block (PE4259 RF ports need 0 V DC) and add the π.
-
-### E. Smaller items (reference does them, cheap)
-- Switch control V1/V2: add a **100 Ω series resistor + 1 nF to GND** on each line.
-- VBAT_RF (pin 2): add a **56 pF** (47 pF is fine) next to the 100 nF. My own suggestion, not from the reference: add a **10 µF** bulk cap near the LR1121. On 2 layers it will sit farther from the LDO caps, and it sees PA current pulses.
-- VTCXO: the reference uses a ferrite (BLM15PG100SN1D) + 1 nF at the pin and 100 nF at the TCXO. Your 220 Ω + 10 pF coupling into XTA with XTB NC is fine. Keep it.
-- Optional: low-capacitance ESD diode (RClamp1561P) on each u.FL.
-
-### F. DC-DC inductor (L1 2.2 µH): still open
-Not given in the LR1121 DS rev 2.0 or UM rev 1.2. The SX126x family that the LR11xx radio is derived from uses **15 µH**. Get the value from Semtech's LR1121 reference design BOM (semtech.com) before ordering. VREG cap C10 470 nF matches the reference.
-
-**General:** these values were tuned on someone else's layout. Give every series and shunt position its own 0402 pad, including the DNP ones, so the network can be re-tuned with a VNA if one is available.
+### Parts
+Use Murata **LQW15AN** wirewound inductors and Murata **GRM1555C1H** C0G capacitors (0402), as in the e655 BOM. Change the RF inductor footprints from 0603 to **0402**.
 
 ## 3. RF on a 2-layer 1.6 mm board
 
