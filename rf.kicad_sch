@@ -692,7 +692,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "QFN50P500X500X100-33N-D"
+			(property "Footprint" "custom_footrpint:QFN50P500X500X100-33N-D"
 				(at 36.83 -79.68 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6629,7 +6629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN50P500X500X100-33N-D"
+		(property "Footprint" "custom_footrpint:QFN50P500X500X100-33N-D"
 			(at 170.18 176.2 0)
 			(hide yes)
 			(show_name no)

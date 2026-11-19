@@ -6,7 +6,7 @@
     (property "Value" "LR1121IMLTRT" (at 36.83 20.32 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (property "Footprint" "QFN50P500X500X100-33N-D" (at 36.83 -79.68 0)
+    (property "Footprint" "custom_footrpint:QFN50P500X500X100-33N-D" (at 36.83 -79.68 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/3n000000v5Si/w76yOLVE0v.G27kJ8qsY4sb86oymvTIhxqK.Euzn2z0" (at 36.83 -179.68 0)
