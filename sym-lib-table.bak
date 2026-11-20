@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ESP32-S3-WROOM-1U-N16R8") (type "KiCad") (uri "${KIPRJMOD}/custom_symbols/ESP32-S3-WROOM-1U-N16R8.kicad_sym") (options "") (descr ""))
+	(lib (name "LR1121IMLTRT") (type "KiCad") (uri "${KIPRJMOD}/custom_symbols/LR1121IMLTRT.kicad_sym") (options "") (descr ""))
+	(lib (name "Johanson_IPD") (type "KiCad") (uri "${KIPRJMOD}/custom_symbols/Johanson_IPD.kicad_sym") (options "") (descr ""))
+)
