@@ -1,4 +1,4 @@
-# LoRatron V2: schematic and RF review (2026-11-19)
+q# LoRatron V2: schematic and RF review (2026-11-19)
 
 Target: ESP32-S3-MINI-1U-N8 + LR1121, **2-layer, 30 × 60 mm**, 4 × M2.5. Work on `main`.
 Checked: the `loratron.kicad_sch` / `rf.kicad_sch` saved at 15:16, the netlist and ERC from kicad-cli.
